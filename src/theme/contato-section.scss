@@ -1,0 +1,26 @@
+@import './variables.scss';
+.contato-section {
+  display: block;
+  height: 500px;
+  padding-bottom: 64px;
+  @media (max-width: 756px) {
+    height: unset;
+  }
+  .disclaimer {
+    margin-top: 117px;
+    padding-right: 24px;
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 48px;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 140%;
+    }
+  }
+  .contact-form {
+    margin-top: 117px;
+    width: 100%;
+  }
+}

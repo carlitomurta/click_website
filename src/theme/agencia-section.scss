@@ -1,0 +1,47 @@
+@import './variables.scss';
+.gradient {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-color: $yellow;
+  opacity: 0.8;
+  z-index: 10;
+}
+.background {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background-image: url('assets/images/agencia_background.png');
+  background-size: cover;
+  z-index: 9;
+}
+.agencia-section {
+  display: block;
+  height: 100vh;
+  .disclaimer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 11;
+    color: $white;
+    text-align: center;
+    .title {
+      font-size: 72px;
+      font-weight: bold;
+      letter-spacing: 0.05rem;
+      line-height: 86px;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-size: 24px;
+      line-height: 150%;
+      max-width: 500px;
+    }
+  }
+}

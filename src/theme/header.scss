@@ -1,0 +1,82 @@
+@import './variables.scss';
+header {
+  padding-top: 24px;
+  position: fixed;
+  width: 100vw;
+  z-index: 99999;
+  transition: all 0.3s ease-in-out;
+  &.translucent {
+    background-color: transparent;
+    .nav-link {
+      color: $white;
+    }
+  }
+  &.opaque {
+    padding-top: 0px;
+    color: $black;
+    background-color: $white;
+    box-shadow: 0px 4px 4px rgba($color: $black, $alpha: 0.2);
+    .nav-item {
+      .nav-link {
+        color: $black !important;
+      }
+    }
+    .brand-image-white {
+      display: none !important;
+    }
+    .brand-image-black {
+      display: block !important;
+    }
+    .navbar-collapse {
+      background-color: transparent;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+  .navbar {
+    .navbar-toggler {
+      color: $black;
+      border: 0;
+      background-color: $white;
+    }
+    .navbar-brand {
+      img {
+        width: 187px;
+        height: 75px;
+      }
+      .brand-image-white {
+        display: block;
+      }
+      .brand-image-black {
+        display: none;
+      }
+    }
+    .navbar-collapse {
+      padding: 24px;
+      background-color: $white;
+      border-radius: 16px;
+      @media (min-width: 992px) {
+        background-color: transparent;
+      }
+    }
+    .nav-item {
+      &:hover {
+        .nav-link {
+          text-shadow: 0 0 6px $white;
+          text-decoration: underline !important;
+        }
+      }
+      &.active {
+        .nav-link {
+          font-weight: bold;
+        }
+      }
+      .nav-link {
+        color: $white;
+        @media (max-width: 992px) {
+          color: $black;
+        }
+      }
+    }
+  }
+}

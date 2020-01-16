@@ -1,0 +1,25 @@
+@import './variables.scss';
+.footer-section {
+  display: block;
+  height: 435px;
+  padding-bottom: 64px;
+  padding-top: 88px;
+  background-color: $light;
+  @media (max-width: 756px) {
+    height: unset;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+  .list {
+    margin-bottom: 80px;
+    .item {
+      display: block;
+      font-size: 12px;
+      line-height: 160%;
+      color: $black;
+    }
+  }
+}

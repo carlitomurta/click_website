@@ -1,0 +1,53 @@
+@import './variables.scss';
+.servicos-section {
+  display: block;
+  height: 500px;
+  padding-bottom: 80px;
+  @media (max-width: 756px) {
+    height: unset;
+  }
+  .title {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+  }
+  .cloud {
+    width: 100%;
+    margin-bottom: 100px;
+    .number {
+      font-size: 100px;
+      font-weight: bold;
+      color: rgba($color: $black, $alpha: 0.08);
+      margin: 0;
+      text-align: center;
+    }
+    .service {
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      .service-icon {
+        display: block;
+        margin: 0 auto;
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .service-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      .service-description {
+        font-size: 12px;
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+}

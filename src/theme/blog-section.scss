@@ -1,0 +1,56 @@
+@import './variables.scss';
+.blog-section {
+  display: block;
+  height: 660px;
+  background-color: $light;
+  padding-bottom: 64px;
+  @media (max-width: 756px) {
+    height: unset;
+  }
+  .title {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+  }
+
+  .blog-card {
+    position: relative;
+    margin-bottom: 150px;
+    .img-card {
+      width: 100%;
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+    }
+    .description-card {
+      position: absolute;
+      bottom: -50%;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 24px;
+      width: calc(100% - 32px);
+      text-align: center;
+      background-color: $white;
+      border-radius: 8px;
+      box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+      .description-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 32px;
+      }
+      .description-subtitle {
+        font-size: 12px;
+        line-height: 150%;
+        margin-bottom: 24px;
+      }
+      .read-more {
+        font-size: 12px;
+        line-height: 150%;
+        color: $red;
+      }
+    }
+  }
+}
