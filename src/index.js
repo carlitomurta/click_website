@@ -27,11 +27,16 @@ document.body.onscroll = function() {
 };
 const header = document.getElementById('header');
 function scrollHandle() {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    header.className = 'opaque';
-    header.classList.remove('translucent');
-  } else {
-    header.className = 'translucent';
-    header.classList.remove('opaque');
+  if (header) {
+    if (
+      document.body.scrollTop > 10 ||
+      document.documentElement.scrollTop > 10
+    ) {
+      header.className = 'opaque';
+      header.classList.remove('translucent');
+    } else {
+      header.className = 'translucent';
+      header.classList.remove('opaque');
+    }
   }
 }

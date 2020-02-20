@@ -42,10 +42,14 @@ module.exports = {
       filename: 'style.css'
     }),
     new HtmlWebpackPlugin({
-      inject: false,
-      hash: true,
-      template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      template: 'src/index.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'post1.html',
+      template: 'src/posts/post1.html',
+      chunks: ['post1']
     }),
     new WebpackMd5Hash(),
     new CopyPlugin([{ from: 'src/assets', to: 'assets' }])
