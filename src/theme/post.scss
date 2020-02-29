@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import "variables.scss";
 .blogpost {
   padding: 132px 24px;
   width: 700px;
@@ -37,5 +37,23 @@
     color: rgba(0, 0, 0, 0.84);
     font-style: normal;
     font-weight: 400;
+  }
+  .author-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 12px;
+  }
+  .author-name {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 2px;
+  }
+  .post-date {
+    color: rgba($color: #000000, $alpha: 0.5);
+    font-size: 16px;
+    margin: 0;
+    line-height: 20px;
   }
 }
